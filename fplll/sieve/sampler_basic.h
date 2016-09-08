@@ -4,10 +4,10 @@
 #ifndef FPLLL_SIEVE_SAMPLER_BASIC_H
 #define FPLLL_SIEVE_SAMPLER_BASIC_H
 
-#include "fplll/defs.h"
-#include "fplll/nr/nr_Z.inl"
-#include "fplll/nr/matrix.h"
-#include "fplll/gso.h"
+#include "defs.h"
+#include "nr/nr_Z.inl"
+#include "nr/matrix.h"
+#include "gso.h"
 
 using namespace std;
 using namespace fplll;

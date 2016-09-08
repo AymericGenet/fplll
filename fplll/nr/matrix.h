@@ -18,7 +18,7 @@
 #ifndef FPLLL_MATRIX_H
 #define FPLLL_MATRIX_H
 
-#include "fplll/nr/numvect.h"
+#include "numvect.h"
 
 FPLLL_BEGIN_NAMESPACE
 
@@ -338,6 +338,6 @@ typedef FP_mat<FloatT> FloatMatrix;
 
 FPLLL_END_NAMESPACE
 
-#include "fplll/nr/matrix.cpp"
+#include "matrix.cpp"
 
 #endif

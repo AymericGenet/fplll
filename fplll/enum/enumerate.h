@@ -20,9 +20,9 @@
 
 #include <array>
 #include <memory>
-#include <fplll/gso.h>
-#include <fplll/enum/evaluator.h>
-#include <fplll/enum/enumerate_base.h>
+#include "gso.h"
+#include "evaluator.h"
+#include "enumerate_base.h"
 
 FPLLL_BEGIN_NAMESPACE
 
