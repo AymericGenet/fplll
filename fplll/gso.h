@@ -91,9 +91,9 @@ public:
    */
   //~ MatGSO(Matrix<ZT>& b, Matrix<ZT>& u, Matrix<ZT>& u_inv_t, int flags);
   MatGSO(Matrix<ZT> &arg_b, Matrix<ZT> &arg_u, Matrix<ZT> &arg_uinv_t, int flags)
-      : b(arg_b), enable_int_gram(flags & GSO_INT_GRAM), enable_row_expo(flags & GSO_ROW_EXPO),
+      : b(arg_b), enable_int_gram((flags & GSO_INT_GRAM) != 0), enable_row_expo((flags & GSO_ROW_EXPO) != 0),
         enable_transform(arg_u.get_rows() > 0), enable_inverse_transform(arg_uinv_t.get_rows() > 0),
-        row_op_force_long(flags & GSO_OP_FORCE_LONG), u(arg_u), u_inv_t(arg_uinv_t),
+        row_op_force_long((flags & GSO_OP_FORCE_LONG) != 0), u(arg_u), u_inv_t(arg_uinv_t),
         n_known_rows(0), n_source_rows(0), n_known_cols(0), cols_locked(false), alloc_dim(0)
   {
     FPLLL_DEBUG_CHECK(!(enable_int_gram && enable_row_expo));

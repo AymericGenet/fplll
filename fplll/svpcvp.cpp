@@ -61,7 +61,7 @@ static bool enumerate_svp(int d, MatGSO<Integer, Float> &gso, Float &max_dist,
                           Evaluator<Float> &evaluator, const vector<enumf> &pruning, int flags)
 {
   Enumeration<Float> enumobj(gso, evaluator);
-  bool dual = (flags & SVP_DUAL);
+  bool dual = (flags & SVP_DUAL) != 0;
   if (d == 1 || !pruning.empty() || dual)
   {
     enumobj.enumerate(0, d, max_dist, 0, vector<Float>(), vector<enumxt>(), pruning, dual);

@@ -466,8 +466,8 @@ template <class FT> bool BKZReduction<FT>::bkz()
   int flags        = param.flags;
   int final_status = RED_SUCCESS;
   nodes            = 0;
-  bool sd          = (flags & BKZ_SD_VARIANT);
-  bool sld         = (flags & BKZ_SLD_RED);
+  bool sd          = (flags & BKZ_SD_VARIANT) != 0;
+  bool sld         = (flags & BKZ_SLD_RED) != 0;
   algorithm        = sd ? "SD-BKZ" : sld ? "SLD" : "BKZ";
 
   if (sd && sld)

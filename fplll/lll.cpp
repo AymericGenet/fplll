@@ -33,8 +33,8 @@ LLLReduction<ZT, FT>::LLLReduction(MatGSO<ZT, FT> &m, double delta, double eta, 
      0 <= i < n_known_rows and j <= i" in gso.h should be changed and
      MatGSO<ZT, FT>::discover_row() should be rewritten. */
   enable_early_red = (flags & LLL_EARLY_RED) && !m.enable_int_gram;
-  siegel           = flags & LLL_SIEGEL;
-  verbose          = flags & LLL_VERBOSE;
+  siegel           = (flags & LLL_SIEGEL) != 0;
+  verbose          = (flags & LLL_VERBOSE) != 0;
   this->delta      = delta;
   this->eta        = eta;
   swap_threshold   = siegel ? delta - eta * eta : delta;

@@ -160,7 +160,7 @@ inline bool FP_NR<dpe_t>::operator>(double a) const {
 
 template<>
 inline bool FP_NR<dpe_t>::is_zero() const {
-  return dpe_zero_p(data);
+  return dpe_zero_p(data) != 0;
 }
 
 template<>
