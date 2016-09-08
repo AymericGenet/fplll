@@ -290,7 +290,8 @@ static void babai(const FloatMatrix &matrix, const Matrix<Float> &mu, const Matr
   }
 }
 
-int closest_vector(IntMatrix &b, const IntVect &int_target, IntVect &sol_coord, int flags)
+int closest_vector(IntMatrix &b, const IntVect &int_target, IntVect &sol_coord,
+                   int flags)
 {
   // d = lattice dimension (note that it might decrease during preprocessing)
   int d = b.get_rows();

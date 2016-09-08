@@ -39,7 +39,7 @@ int shortest_vector_pruning(IntMatrix &b, IntVect &sol_coord, vector<IntVect> &s
                             int flags = SVP_DEFAULT);
 
 // Experimental. Do not use.
-int closest_vector(IntMatrix &b, const IntVect &int_target, vector<Integer> &sol_coord,
+int closest_vector(IntMatrix &b, const IntVect &int_target, IntVect &sol_coord,
                    int flags = CVP_DEFAULT);
 
 FPLLL_END_NAMESPACE
