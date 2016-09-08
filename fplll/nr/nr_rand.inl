@@ -17,7 +17,7 @@ public:
   }
   static void init_with_seed(unsigned long seed) {
     init();
-    gmp_randseed_ui(gmp_state, seed);
+    gmp_randseed_ui(gmp_state, (unsigned long) seed);
   }
   static void init_with_time() {
     init();
@@ -47,7 +47,7 @@ class RandGenInt {
 public:
   static void init() {
     initialized = true;
-    srand(time(NULL));
+    srand((unsigned int) time(NULL));
   }
   static int get() {
     if (!initialized)

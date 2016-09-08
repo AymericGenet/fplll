@@ -183,7 +183,7 @@ public:
       Number of nodes visited during enumeration.
   */
 
-  long nodes;
+  uint64_t nodes;
 
 private:
   void print_tour(const int loop, int min_row, int max_row);

@@ -136,7 +136,7 @@ int main (int argc, char** argv)
     cout << "# [info] generating random lattice of dimension "
          << dim << endl;
     }
-    srand (time(NULL));
+    srand ((unsigned int) time(NULL));
     B.resize(dim, dim);
     B.gen_trg(1.1);
   }

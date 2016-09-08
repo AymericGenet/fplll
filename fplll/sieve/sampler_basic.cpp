@@ -139,7 +139,7 @@ NumVect<Z_NR<ZT> > KleinSampler<ZT, F>::sample ()
   Z_NR<ZT> tmpz;
 
   for (int i = 0; i < nc; i++)
-    vec[i] = 0.0;
+    vec[i] = 0L;
   for (int i = 0; i < nr; i++)
     ci[i] = 0.0;
     

@@ -285,7 +285,7 @@ inline void FP_NR<mpfr_t>::swap(FP_NR<mpfr_t>& a) {
 template<>
 inline ostream& operator<<(ostream& os, const FP_NR<mpfr_t>& x) {
   mp_exp_t e;
-  char* s = mpfr_get_str(NULL, &e, 10, os.precision(), x.get_data(), GMP_RNDN);
+  char* s = mpfr_get_str(NULL, &e, 10, (size_t) os.precision(), x.get_data(), GMP_RNDN);
   char* p = s;
   if (*p == '-') {
     os << *p;
