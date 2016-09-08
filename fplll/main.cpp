@@ -15,6 +15,10 @@
    You should have received a copy of the GNU Lesser General Public License
    along with fplll. If not, see <http://www.gnu.org/licenses/>. */
 
+#if (_MSC_VER >= 1440)
+  #pragma warning(disable : 4996)
+#endif
+
 #include "main.h"
 #include <config.h>
 

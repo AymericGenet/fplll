@@ -20,6 +20,10 @@
 
 /* WARNING: Patched version */
 
+#if (_MSC_VER >= 1440)
+  #pragma warning(disable : 4996)
+#endif
+
 #ifndef FPLLL_DPE_H
 #define FPLLL_DPE_H
 #define __DPE
