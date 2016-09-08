@@ -18,8 +18,12 @@
 #ifndef FPLLL_H
 #define FPLLL_H
 
-#if __cplusplus < 201103L
-#error fplll needs at least a C++11 compliant compiler
+#ifdef _MSC_VER
+  /* The 1990s called, they want their compiler back. */
+#else
+  #if __cplusplus < 201103L
+  #error fplll needs at least a C++11 compliant compiler
+  #endif
 #endif
 
 #include "util.h"
