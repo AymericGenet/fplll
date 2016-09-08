@@ -27,9 +27,24 @@ FPLLL_BEGIN_NAMESPACE
 static inline int cputime()
 {
 #ifdef FPLLL_WITH_GETRUSAGE
-  struct rusage rus;
-  getrusage(RUSAGE_SELF, &rus);
-  return rus.ru_utime.tv_sec * 1000 + rus.ru_utime.tv_usec / 1000;
+  #ifdef _WIN32
+    /* source: http://nadeausoftware.com/articles/2012/03/c_c_tip_how_measure_cpu_time_benchmarking */
+    FILETIME createTime;
+    FILETIME exitTime;
+    FILETIME kernelTime;
+    FILETIME userTime;
+    SYSTEMTIME userSystemTime;
+    GetProcessTimes(GetCurrentProcess(), &createTime, &exitTime, &kernelTime, &userTime);
+    FileTimeToSystemTime(&userTime, &userSystemTime);
+    return userSystemTime.wHour * 3600
+      + userSystemTime.wMinute * 60
+      + userSystemTime.wSecond
+      + userSystemTime.wMilliseconds / 1000;
+  #else
+    struct rusage rus;
+    getrusage(RUSAGE_SELF, &rus);
+    return rus.ru_utime.tv_sec * 1000 + rus.ru_utime.tv_usec / 1000;
+  #endif
 #else
   return time(NULL) * 1000;
 #endif

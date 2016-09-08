@@ -43,9 +43,14 @@
 #include <string>
 
 #ifdef FPLLL_WITH_GETRUSAGE
-  #include <sys/time.h>
-  #include <sys/resource.h>
-  #include <unistd.h>
+  #ifdef _WIN32
+    #include <winsock.h>
+    #include <Windows.h>
+  #else
+    #include <sys/time.h>
+    #include <sys/resource.h>
+    #include <unistd.h>
+  #endif
 #endif
 
 #include <gmp.h>
