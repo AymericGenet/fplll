@@ -17,7 +17,11 @@
 
 #include "fplll.h"
 #include "wrapper.h"
-#include "svpcvp.cpp"
+
+#ifndef _WIN32
+  // FIXME: add svpcvp.cpp in Makefile
+  #include "svpcvp.cpp"
+#endif
 
 FPLLL_BEGIN_NAMESPACE
 
