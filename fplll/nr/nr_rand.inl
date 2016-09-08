@@ -4,6 +4,10 @@
 
 #include <time.h>
 
+#ifdef _WIN32
+  #include "gettimeofday.h"
+#endif
+
 #ifndef FPLLL_NR_RAND_H
 #define FPLLL_NR_RAND_H
 
@@ -26,7 +30,7 @@ public:
   static void init_with_time2() {
     init();
     struct timeval time; 
-    gettimeofday(&time,NULL);
+    gettimeofday(&time, NULL);
     gmp_randseed_ui(gmp_state, (time.tv_sec * 1000)
                     + (time.tv_usec / 1000));
   }
