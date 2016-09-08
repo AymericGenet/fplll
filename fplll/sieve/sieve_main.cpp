@@ -173,7 +173,7 @@ int main (int argc, char** argv)
   max = B.get_max();
 
 #if 1
-  if (max < std::numeric_limits<int>::max()) {
+  if (max < (std::numeric_limits<int>::max)()) {
     long goal_norm_l = abs(goal_norm.get_si());
     Z_NR<long> goal_norm_lt;
     goal_norm_lt = goal_norm_l;

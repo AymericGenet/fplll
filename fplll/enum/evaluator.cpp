@@ -241,7 +241,7 @@ void FastEvaluator<Float>::eval_sol(const FloatVect &new_sol_coord, const enumf 
 void FastEvaluator<Float>::eval_sub_sol(int offset, const FloatVect &new_sub_sol_coord,
                                         const enumf &sub_dist)
 {
-  sub_sol_coord.resize(std::max(sub_sol_coord.size(), std::size_t(offset + 1)));
+  sub_sol_coord.resize((std::max)(sub_sol_coord.size(), std::size_t(offset + 1)));
   sub_sol_dist.resize(sub_sol_coord.size(), -1.0);
   if (sub_sol_dist[offset] == -1.0 || sub_dist < sub_sol_dist[offset])
   {
@@ -340,7 +340,7 @@ void ExactEvaluator::eval_sol(const FloatVect &new_sol_coord, const enumf &new_p
 void ExactEvaluator::eval_sub_sol(int offset, const FloatVect &new_sub_sol_coord,
                                   const enumf &sub_dist)
 {
-  sub_sol_coord.resize(std::max(sub_sol_coord.size(), std::size_t(offset + 1)));
+  sub_sol_coord.resize((std::max)(sub_sol_coord.size(), std::size_t(offset + 1)));
   sub_sol_dist.resize(sub_sol_coord.size(), -1.0);
   Integer minusone;
   minusone = -1;

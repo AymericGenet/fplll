@@ -38,7 +38,7 @@ public:
 */
   
   BKZAutoAbort(MatGSO<Integer, FT> &m, int num_rows, int start_row = 0)
-      : m(m), old_slope(numeric_limits<double>::max()), no_dec(-1), num_rows(num_rows),
+      : m(m), old_slope((numeric_limits<double>::max)()), no_dec(-1), num_rows(num_rows),
         start_row(start_row)
   {
   }
