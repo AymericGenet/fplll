@@ -25,7 +25,7 @@ public:
   }
   static void init_with_time() {
     init();
-    gmp_randseed_ui(gmp_state, time(NULL));
+    gmp_randseed_ui(gmp_state, (unsigned long) time(NULL));
   }
   static void init_with_time2() {
     init();
