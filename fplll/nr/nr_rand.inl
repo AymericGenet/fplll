@@ -5,6 +5,7 @@
 #include <time.h>
 
 #ifdef _WIN32
+  //#def _NEED_TIMEVAL
   #include "gettimeofday.h"
 #endif
 
