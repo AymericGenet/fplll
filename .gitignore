@@ -64,3 +64,11 @@ doc/html/
 /fplll/latsieve
 /tests/test_sieve
 /fplll-?.?.?/
+*.VC.db
+*.exe
+*.iobj
+*.ipdb
+*.pdb
+.vs/
+Release/
+Debug/
