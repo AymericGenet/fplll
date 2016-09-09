@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\nr">
+      <UniqueIdentifier>{2644bfde-4b27-4e46-8481-40ec4646b8a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\enum">
+      <UniqueIdentifier>{2d2cd803-a339-48a4-ba0f-f931b11455fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\enum">
+      <UniqueIdentifier>{70ba95ea-5b47-426b-90d0-f721e8961b32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\nr">
+      <UniqueIdentifier>{18f49c41-9b84-47c8-ab2f-40ad10b4a5eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\io">
+      <UniqueIdentifier>{b2271c3f-63c9-4e2d-8851-7b140b28b28a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\fplll\bkz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\bkz_param.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\fplll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\gso.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\lll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\llldiff.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\pruner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\svpcvp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\wrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\nr\matrix.cpp">
+      <Filter>Source Files\nr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\enum\enumerate.cpp">
+      <Filter>Source Files\enum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\enum\enumerate_base.cpp">
+      <Filter>Source Files\enum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\enum\evaluator.cpp">
+      <Filter>Source Files\enum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\enum\topenum.cpp">
+      <Filter>Source Files\enum</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\fplll\bkz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\bkz_param.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\fplll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\fplll_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\gso.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\lll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\pruner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\svpcvp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\wrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\enum\enumerate.h">
+      <Filter>Header Files\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\enum\enumerate_base.h">
+      <Filter>Header Files\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\enum\evaluator.h">
+      <Filter>Header Files\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\enum\topenum.h">
+      <Filter>Header Files\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\io\json.hpp">
+      <Filter>Header Files\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\nr\dpe.h">
+      <Filter>Header Files\nr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\nr\matrix.h">
+      <Filter>Header Files\nr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\nr\nr.h">
+      <Filter>Header Files\nr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\nr\numvect.h">
+      <Filter>Header Files\nr</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\fplll\nr\nr_FP.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_FP_d.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_FP_dd.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_FP_dpe.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_FP_ld.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_FP_misc.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_FP_mpfr.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_FP_qd.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_rand.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_Z.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_Z_d.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_Z_l.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_Z_misc.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+    <None Include="..\..\..\fplll\nr\nr_Z_mpz.inl">
+      <Filter>Header Files\nr</Filter>
+    </None>
+  </ItemGroup>
+</Project>

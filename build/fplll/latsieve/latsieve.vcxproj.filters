@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\sieve">
+      <UniqueIdentifier>{fab18d79-b1c5-4d64-846d-942dc30797d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sieve">
+      <UniqueIdentifier>{e8002337-fb01-496f-a1fd-d5db15cf4e80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_main.cpp">
+      <Filter>Source Files\sieve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\sieve\sampler_basic.cpp">
+      <Filter>Source Files\sieve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss.cpp">
+      <Filter>Source Files\sieve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss_2sieve.cpp">
+      <Filter>Source Files\sieve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss_3sieve.cpp">
+      <Filter>Source Files\sieve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss_4sieve.cpp">
+      <Filter>Source Files\sieve</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\fplll\sieve\sampler_basic.h">
+      <Filter>Header Files\sieve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\sieve\sieve_common.h">
+      <Filter>Header Files\sieve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\sieve\sieve_gauss.h">
+      <Filter>Header Files\sieve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\sieve\sieve_gauss_str.h">
+      <Filter>Header Files\sieve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\sieve\sieve_main.h">
+      <Filter>Header Files\sieve</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

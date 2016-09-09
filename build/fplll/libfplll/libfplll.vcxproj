@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AEC79573-2518-4569-A55E-806F615C8516}</ProjectGuid>
+    <RootNamespace>libfplll</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)..\include;$(SolutionDir)..\..\fplll;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <ReferencePath>$(SolutionDir)..\bin;$(VC_ReferencesPath_x86);</ReferencePath>
+    <LibraryPath>$(SolutionDir)..\lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)..\include;$(SolutionDir)..\..\fplll;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <ReferencePath>$(SolutionDir)..\bin;$(VC_ReferencesPath_x86);</ReferencePath>
+    <LibraryPath>$(SolutionDir)..\lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\fplll\bkz.cpp" />
+    <ClCompile Include="..\..\..\fplll\bkz_param.cpp" />
+    <ClCompile Include="..\..\..\fplll\enum\enumerate.cpp" />
+    <ClCompile Include="..\..\..\fplll\enum\enumerate_base.cpp" />
+    <ClCompile Include="..\..\..\fplll\enum\evaluator.cpp" />
+    <ClCompile Include="..\..\..\fplll\enum\topenum.cpp" />
+    <ClCompile Include="..\..\..\fplll\fplll.cpp" />
+    <ClCompile Include="..\..\..\fplll\gso.cpp" />
+    <ClCompile Include="..\..\..\fplll\lll.cpp" />
+    <ClCompile Include="..\..\..\fplll\llldiff.cpp" />
+    <ClCompile Include="..\..\..\fplll\nr\matrix.cpp" />
+    <ClCompile Include="..\..\..\fplll\pruner.cpp" />
+    <ClCompile Include="..\..\..\fplll\svpcvp.cpp" />
+    <ClCompile Include="..\..\..\fplll\util.cpp" />
+    <ClCompile Include="..\..\..\fplll\wrapper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\fplll\bkz.h" />
+    <ClInclude Include="..\..\..\fplll\bkz_param.h" />
+    <ClInclude Include="..\..\..\fplll\defs.h" />
+    <ClInclude Include="..\..\..\fplll\enum\enumerate.h" />
+    <ClInclude Include="..\..\..\fplll\enum\enumerate_base.h" />
+    <ClInclude Include="..\..\..\fplll\enum\evaluator.h" />
+    <ClInclude Include="..\..\..\fplll\enum\topenum.h" />
+    <ClInclude Include="..\..\..\fplll\fplll.h" />
+    <ClInclude Include="..\..\..\fplll\fplll_config.h" />
+    <ClInclude Include="..\..\..\fplll\gso.h" />
+    <ClInclude Include="..\..\..\fplll\io\json.hpp" />
+    <ClInclude Include="..\..\..\fplll\lll.h" />
+    <ClInclude Include="..\..\..\fplll\main.h" />
+    <ClInclude Include="..\..\..\fplll\nr\dpe.h" />
+    <ClInclude Include="..\..\..\fplll\nr\matrix.h" />
+    <ClInclude Include="..\..\..\fplll\nr\nr.h" />
+    <ClInclude Include="..\..\..\fplll\nr\numvect.h" />
+    <ClInclude Include="..\..\..\fplll\pruner.h" />
+    <ClInclude Include="..\..\..\fplll\svpcvp.h" />
+    <ClInclude Include="..\..\..\fplll\util.h" />
+    <ClInclude Include="..\..\..\fplll\wrapper.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\fplll\nr\nr_FP.inl" />
+    <None Include="..\..\..\fplll\nr\nr_FP_d.inl" />
+    <None Include="..\..\..\fplll\nr\nr_FP_dd.inl" />
+    <None Include="..\..\..\fplll\nr\nr_FP_dpe.inl" />
+    <None Include="..\..\..\fplll\nr\nr_FP_ld.inl" />
+    <None Include="..\..\..\fplll\nr\nr_FP_misc.inl" />
+    <None Include="..\..\..\fplll\nr\nr_FP_mpfr.inl" />
+    <None Include="..\..\..\fplll\nr\nr_FP_qd.inl" />
+    <None Include="..\..\..\fplll\nr\nr_rand.inl" />
+    <None Include="..\..\..\fplll\nr\nr_Z.inl" />
+    <None Include="..\..\..\fplll\nr\nr_Z_d.inl" />
+    <None Include="..\..\..\fplll\nr\nr_Z_l.inl" />
+    <None Include="..\..\..\fplll\nr\nr_Z_misc.inl" />
+    <None Include="..\..\..\fplll\nr\nr_Z_mpz.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
