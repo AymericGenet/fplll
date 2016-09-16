@@ -20,6 +20,10 @@
 #define TESTDATADIR ".."
 #endif
 
+#ifdef _MSC_VER
+namespace test_bkz_tests {
+#endif
+
 using namespace std;
 using namespace fplll;
 
@@ -231,6 +235,7 @@ int test_linear_dep()
   return test_bkz_param<mpz_t>(A, 3);
 }
 
+
 int main(int /*argc*/, char** /*argv*/)
 {
 
@@ -286,3 +291,7 @@ int main(int /*argc*/, char** /*argv*/)
 
   return 0;
 }
+
+#ifdef _MSC_VER
+}
+#endif

@@ -20,6 +20,10 @@
 #include <qd/dd_real.h>
 #endif
 
+#ifdef _MSC_VER
+namespace test_pruner_tests {
+#endif
+
 using namespace std;
 using namespace fplll;
 
@@ -311,6 +315,7 @@ template <class FT> int test_auto_prune(size_t n) {
   return status;
 }
 
+
 int main(int argc, char *argv[])
 {
 
@@ -355,3 +360,7 @@ int main(int argc, char *argv[])
 
   return 0;
 }
+
+#ifdef _MSC_VER
+}
+#endif

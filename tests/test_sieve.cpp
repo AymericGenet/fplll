@@ -6,6 +6,10 @@
 #define TESTDATADIR ".."
 #endif
 
+#ifdef _MSC_VER
+namespace test_sieve_tests {
+#endif
+
 using namespace std;
 using namespace fplll;
 
@@ -102,6 +106,7 @@ int test_filename (const char *input_filename, const char *output_filename) {
   return test_sieve<ZT>(A, b);
 }
 
+
 /* 
    Note make check uses the following relative path for the filename.
 */
@@ -122,3 +127,7 @@ int main(int /*argc*/, char ** /*argv*/) {
 
   return 0;
 }
+
+#ifdef _MSC_VER
+}
+#endif

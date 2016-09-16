@@ -15,6 +15,9 @@
 
 #include <cstring>
 #include <fplll.h>
+#ifdef _MSC_VER
+namespace test_lll_tests {
+#endif
 
 using namespace std;
 using namespace fplll;
@@ -181,3 +184,7 @@ int main(int /*argc*/, char ** /*argv*/)
 
   return 0;
 }
+
+#ifdef _MSC_VER
+}
+#endif
