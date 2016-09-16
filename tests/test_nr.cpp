@@ -15,6 +15,8 @@
 
 #include <cstring>
 #include <fplll.h>
+#include "test_nr.h"
+
 #ifdef _MSC_VER
 namespace test_nr_tests {
 #endif

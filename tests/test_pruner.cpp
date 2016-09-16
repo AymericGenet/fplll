@@ -15,6 +15,7 @@
 
 #include <cstring>
 #include <fplll.h>
+#include "test_pruner.h"
 
 #ifdef FPLLL_WITH_QD
 #include <qd/dd_real.h>

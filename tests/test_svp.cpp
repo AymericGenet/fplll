@@ -16,6 +16,7 @@
 
 #include <cstring>
 #include <fplll.h>
+#include "test_svp.h"
 
 #ifndef TESTDATADIR
 #define TESTDATADIR ".."

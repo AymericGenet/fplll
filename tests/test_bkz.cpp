@@ -15,6 +15,7 @@
 
 #include <cstring>
 #include <fplll.h>
+#include "test_bkz.h"
 
 #ifndef TESTDATADIR
 #define TESTDATADIR ".."
