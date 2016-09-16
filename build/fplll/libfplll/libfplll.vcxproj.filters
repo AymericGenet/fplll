@@ -28,6 +28,12 @@
     <Filter Include="Header Files\io">
       <UniqueIdentifier>{b2271c3f-63c9-4e2d-8851-7b140b28b28a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\sieve">
+      <UniqueIdentifier>{74bfdb13-b9e7-4562-b778-43b25338e2bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sieve">
+      <UniqueIdentifier>{1d6ec271-e482-4910-8d9c-bf3d53923f30}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\fplll\bkz.cpp">
@@ -74,6 +80,21 @@
     </ClCompile>
     <ClCompile Include="..\..\..\fplll\enum\topenum.cpp">
       <Filter>Source Files\enum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss_4sieve.cpp">
+      <Filter>Source Files\sieve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\sieve\sampler_basic.cpp">
+      <Filter>Source Files\sieve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss.cpp">
+      <Filter>Source Files\sieve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss_2sieve.cpp">
+      <Filter>Source Files\sieve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss_3sieve.cpp">
+      <Filter>Source Files\sieve</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +160,18 @@
     </ClInclude>
     <ClInclude Include="..\..\..\fplll\nr\numvect.h">
       <Filter>Header Files\nr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\sieve\sieve_gauss_str.h">
+      <Filter>Header Files\sieve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\sieve\sampler_basic.h">
+      <Filter>Header Files\sieve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\sieve\sieve_common.h">
+      <Filter>Header Files\sieve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\fplll\sieve\sieve_gauss.h">
+      <Filter>Header Files\sieve</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -24,35 +24,8 @@
     <ClCompile Include="..\..\..\fplll\sieve\sieve_main.cpp">
       <Filter>Source Files\sieve</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\fplll\sieve\sampler_basic.cpp">
-      <Filter>Source Files\sieve</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss.cpp">
-      <Filter>Source Files\sieve</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss_2sieve.cpp">
-      <Filter>Source Files\sieve</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss_3sieve.cpp">
-      <Filter>Source Files\sieve</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss_4sieve.cpp">
-      <Filter>Source Files\sieve</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\fplll\sieve\sampler_basic.h">
-      <Filter>Header Files\sieve</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\fplll\sieve\sieve_common.h">
-      <Filter>Header Files\sieve</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\fplll\sieve\sieve_gauss.h">
-      <Filter>Header Files\sieve</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\fplll\sieve\sieve_gauss_str.h">
-      <Filter>Header Files\sieve</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\fplll\sieve\sieve_main.h">
       <Filter>Header Files\sieve</Filter>
     </ClInclude>

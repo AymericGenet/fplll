@@ -137,6 +137,11 @@
     <ClCompile Include="..\..\..\fplll\llldiff.cpp" />
     <ClCompile Include="..\..\..\fplll\nr\matrix.cpp" />
     <ClCompile Include="..\..\..\fplll\pruner.cpp" />
+    <ClCompile Include="..\..\..\fplll\sieve\sampler_basic.cpp" />
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss.cpp" />
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss_2sieve.cpp" />
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss_3sieve.cpp" />
+    <ClCompile Include="..\..\..\fplll\sieve\sieve_gauss_4sieve.cpp" />
     <ClCompile Include="..\..\..\fplll\svpcvp.cpp" />
     <ClCompile Include="..\..\..\fplll\util.cpp" />
     <ClCompile Include="..\..\..\fplll\wrapper.cpp" />
@@ -160,6 +165,10 @@
     <ClInclude Include="..\..\..\fplll\nr\nr.h" />
     <ClInclude Include="..\..\..\fplll\nr\numvect.h" />
     <ClInclude Include="..\..\..\fplll\pruner.h" />
+    <ClInclude Include="..\..\..\fplll\sieve\sampler_basic.h" />
+    <ClInclude Include="..\..\..\fplll\sieve\sieve_common.h" />
+    <ClInclude Include="..\..\..\fplll\sieve\sieve_gauss.h" />
+    <ClInclude Include="..\..\..\fplll\sieve\sieve_gauss_str.h" />
     <ClInclude Include="..\..\..\fplll\svpcvp.h" />
     <ClInclude Include="..\..\..\fplll\util.h" />
     <ClInclude Include="..\..\..\fplll\wrapper.h" />
