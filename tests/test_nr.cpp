@@ -64,11 +64,9 @@ template <class FT> int test_root()
 {
   FT a;
   a          = 6.1;
-  int status= !(abs(root(a, 3.0) - std::pow(a.get_d(), 1 / 3.0)) < 0.001);
+  int status= !(abs(root(a, 3) - std::pow(a.get_d(), 1 / 3.0)) < 0.001);
   return status;
 }
-
-
 
 int main(int argc, char *argv[])
 {

@@ -104,11 +104,11 @@ public:
       cerr << p[i] << " ";
     }
     cerr << endl;
-    status |= abs(p[0] - 0.0) > 1e-10;
-    status |= abs(p[1] - 1.0) > 1e-10;
-    status |= abs(p[2] - 1. / 2) > 1e-10;
-    status |= abs(p[3] - 2. / 3) > 1e-10;
-    status |= abs(p[4] - 3. / 4) > 1e-10;
+    status |= (int) (abs(p[0] - 0.0) > 1e-10);
+    status |= (int) (abs(p[1] - 1.0) > 1e-10);
+    status |= (int) (abs(p[2] - 1. / 2) > 1e-10);
+    status |= (int) (abs(p[3] - 2. / 3) > 1e-10);
+    status |= (int) (abs(p[4] - 3. / 4) > 1e-10);
     return status;
   }
 
